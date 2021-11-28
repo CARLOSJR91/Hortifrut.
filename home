@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img\favicon\apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img\favicon\android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img\favicon\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img\favicon\favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img\favicon\favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css\estilos.css">
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules\bootstrap-icons\font\bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Hortifrut :: Home</title>
+</head>
+
+<body>
+    <div class="d-flex flex-column wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success border-bottom shadow-sm mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="#"><b>Hortfrut</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Contato</a>
+                        </li>
+                    </ul>
+                    <div class="align-self-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white">cadastro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white">Entra</a>
+                            </li>
+                            <li class="nav-item">
+                                <span class="badge rounded-pill bg-light text-success position-absolute ms-4 mt-0"
+                                    title="5 produto(s) no carrinho">
+                                    <small>5</small></span>
+                                <a href="#" class="nav-link text-white"><i class="bi-cart3"
+                                        style="font-size: 24px; line-height: 24px;"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div id="carouselMain" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item " data-bs-interval="3000">
+                        <img src="img\slides\slide2 (1) -22.jpg" class="d-none d-md-block w-100" alt="">
+                        <img src="img\slides\slide2 (1) -22.jpg" class="d-block d-md-none  w-100" alt="">
+                    </div>
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="img\slides\slide2.1.jpg" class="d-none d-md-block w-100" alt="">
+                        <img src="img\slides\slide2.1.jpg" class="d-block d-md-none  w-100" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img\slides\slide13.jpg" class="d-none d-md-block w-100" alt="">
+                        <img src="img\slides\slide13.jpg" class="d-block d-md-none  w-100" alt="">
+                    </div>
+                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+            <hr class="mt-3">
+        </div>
+        <main class="flex-fill">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <form class="justify-content-center justify-content-md-start mb-3 mb-md-0">
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control" placeholder="Digite aqui o que procura">
+                                <button class="btn btn-danger">Buscar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                            <form class="d-inline-block">
+                                <select class="form-select form-select-sm">
+                                    <option>Ordenar pelo nome</option>
+                                    <option>Ordenar pelo menor preço</option>
+                                    <option>Ordenar pelo maior preço</option>
+                                </select>
+                            </form>
+                            <nav class="d-inline-block me-3">
+                                <ul class="pagination pagination-sm my-0">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">6</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+        
+                <hr mt-3>
+        
+                <div class="row g-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <a href="/produto.html">
+                                <img src="img\produtos\000001.jpg" class="card-img-top">
+                            </a>
+                            <div class="card-header">
+                                R$ 4,50
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Banana Prata</h5>
+                                <p class="card-text truncar-3l">
+                                    Banana prata da melhor qualidade possível, direto do produtor rural para a sua mesa.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">20,5kg em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="img\produtos\000002.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 8,50
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Abacaxi</h5>
+                                <p class="card-text truncar-3l">
+                                O ananás ou abacaxi é uma infrutescência tropical produzida pela planta de mesmo nome, caracterizada como uma planta
+                                monocotiledônea da família das bromeliáceas da subfamília Bromelioideae. É um símbolo das regiões tropicais e
+                                subtropicais.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">320kg em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="img\produtos\000003.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 3,50
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Mamão</h5>
+                                <p class="card-text truncar-3l">
+                                Carica papaya é uma espécie de fruteira tropical que produz os frutos conhecidos pelos nomes comerciais de papaia ou
+                                ababaia, ou mamão.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">28,5kg em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="img\produtos\000004.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 1,50
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Maça</h5>
+                                <p class="card-text truncar-3l">
+                                A maçã é o pseudofruto pomáceo da macieira, árvore da família Rosaceae. É um dos pseudofrutos de árvore mais cultivados,
+                                e o mais conhecido dos muitos membros do género Malus que são usados ​​pelos seres humanos.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">120,5kg em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="img\produtos\000005.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 44,50
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Goiaba</h5>
+                                <p class="card-text truncar-3l">
+                                O fruto é constituído de uma baga, carnoso, casca verde, amarelada ou roxa, com superfície lisa ou irregular, de cerca
+                                de oito centímetros de diâmetro.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">360,5kg em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="img\produtos\000006.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 2,20
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Laranja</h5>
+                                <p class="card-text truncar-3l">
+                                    A laranja é o fruto da laranjeira, uma árvore da família Rutaceae. É um fruto híbrido que teria surgido na Antiguidade a
+                                    partir do cruzamento do pomelo com a tangerina.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">3200,5kg em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="img\produtos\0000007.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 42,00
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Melancia</h5>
+                                <p class="card-text truncar-3l">
+                                Melancia é uma planta da família Cucurbitaceae e do seu fruto. Trata-se de uma trepadeira rastejante originária da
+                                África.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">1320,5kg em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="img\produtos\000008.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 6,50
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Abacate</h5>
+                                <p class="card-text truncar-3l">
+                                    O abacate é o fruto comestível do abacateiro, uma árvore da família da Lauraceae nativa do México ou da América do Sul,
+                                    hoje extensamente cultivada em regiões tropicais e subtropicais, inclusive nas Ilhas Canárias, na Ilha da Madeira e na
+                                    Sicília.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">123,5kg em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart-fill" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="img\produtos\000009.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 9,20
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Abobora</h5>
+                                <p class="card-text truncar-3l">
+                                A abóbora de inverno é uma fruta anual que representa várias espécies de abóbora do gênero Cucurbita. Ela difere da
+                                abóbora por ser colhida e comida na fase madura, quando as sementes amadurecem totalmente e a casca endurece e torna-se
+                                uma casca dura.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">32,5kg em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="img\produtos\000010.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 5,50
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Abobrinha </h5>
+                                <p class="card-text truncar-3l">
+                                    A abobrinha, a abobrinha ou a medula infantil é uma abóbora, planta herbácea de vinha cujos frutos são colhidos quando
+                                    as sementes imaturas e o epicarpo ainda estão macios e comestíveis.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">6,5kg em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="img\produtos\000011.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 10,50
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Repolho</h5>
+                                <p class="card-text truncar-3l">
+                                    O repolho é um vegetal pertencente ao gênero Brassica, o mesmo do brócolis, da couve-flor e da couve. Ele é encontrado
+                                    nas cores vermelho, roxo, branco e verde, e suas folhas podem ser enrugadas ou lisas.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">3,5kg em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="img\produtos\000012.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 14,50
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Alho</h5>
+                                <p class="card-text truncar-3l">
+                                O alho é uma planta comestível pertencente ao gênero Allium, muito usado como tempero e para fins medicinais. Ele cresce
+                                em muitas partes do mundo e é um ingrediente popular na culinária devido ao seu odor característico e sabor forte.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">30,5kg em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <hr class="mt-3">
+        
+                <div class="row pb-3">
+                    <div class="col-12">
+                        <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                            <form class="d-inline-block">
+                                <select class="form-select form-select-sm">
+                                    <option>Ordenar pelo nome</option>
+                                    <option>Ordenar pelo menor preço</option>
+                                    <option>Ordenar pelo maior preço</option>
+                                </select>
+                            </form>
+                            <nav class="d-inline-block me-3">
+                                <ul class="pagination pagination-sm my-0">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">6</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="border-top text-muted bg-light">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-12 col-md-4 text-center">
+                        &copy; 2021 - Hortfrut online Ltda Me <br>
+                        Rua Paraiso Inexistente, 2021, Salvador/br <br>
+                        CNPJ 45.454.454/0001-64
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <a href="#" class="text-decoration-none text-dark">
+                            Politica de privacidade
+                        </a><br>
+
+                        <a href="#" class="text-decoration-none text-dark">
+                            Termos de Uso
+                        </a><br>
+
+                        <a href="#" class="text-decoration-none text-dark">
+                            Quem Somos
+                        </a><br>
+
+                        <a href="#" class="text-decoration-none text-dark">
+                            Trocas e Devoluções
+                        </a><br>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <a href="#" class="text-decoration-none text-dark">
+                            Contato pelo Site
+                        </a><br>
+                        E-mail: <a href="Carlosjr91:email@dominio.com" class="text-decoration-none text-dark">
+                            email@domnio.com
+                        </a><br>
+                        telefone: <a href="phone:212121212121" class="text-decoration-none text-dark">
+                            (71)98888-1111
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="js\bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
